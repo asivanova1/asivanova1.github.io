@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <title>Git: система контроля версий | Анастасия Иванова</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+         
+        body {
+            background: #0d0d0d;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #e0e0e0;
+        }
+        
+         
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+            background: #1a1a1a;
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        .menu a {
+            color: #ff69b4;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .menu a:hover {
+            color: #ff9ecf;
+            text-decoration: underline;
+        }
+        
+         
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+         
+        .theme-switch {
+            display: none;
+        }
+        
+         
+        .avatar {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .avatar img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ff69b4;
+            box-shadow: 0 0 20px rgba(255,105,180,0.3);
+        }
+        
+         
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 2.2em;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #ff69b4;
+            font-size: 1.1em;
+            margin-bottom: 35px;
+            font-weight: 500;
+        }
+        
+         
+        .card {
+            background: #1a1a1a;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            border: 1px solid #333;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .card h1 {
+            text-align: left;
+            border-left: 4px solid #ff69b4;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .post-date {
+            color: #ff69b4;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+        
+        h2 {
+            color: #ffffff;
+            margin: 25px 0 15px;
+            font-size: 1.5em;
+            border-left: 4px solid #ff69b4;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #ff69b4;
+            margin: 20px 0 12px;
+            font-size: 1.3em;
+        }
+        
+        p, li {
+            color: #c0c0c0;
+            line-height: 1.6;
+        }
+        
+        ul, ol {
+            padding-left: 28px;
+            margin: 15px 0;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        a {
+            color: #ff69b4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #ff9ecf;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px 0 20px;
+            color: #666;
+            font-size: 0.85em;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+        
+         
+        .post {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid #333;
+            transition: 0.2s;
+        }
+        .post:hover {
+            transform: translateY(-3px);
+            border-color: #ff69b4;
+        }
+        .post h3 {
+            margin: 0 0 8px;
+        }
+        .post h3 a {
+            color: #ffffff;
+        }
+        .post h3 a:hover {
+            color: #ff69b4;
+        }
+        .date {
+            color: #888;
+            font-size: 0.85em;
+        }
+        
+         
+        .two-cols {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+        .two-cols > div {
+            flex: 1;
+            background: #1a1a1a;
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid #333;
+        }
+        .two-cols h3 {
+            margin-top: 0;
+            color: #ff69b4;
+        }
+        
+         
+        .contacts {
+            display: flex;
+            gap: 24px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        .contacts a {
+            background: #2a2a2a;
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-weight: 500;
+        }
+        .contacts a:hover {
+            background: #ff69b4;
+            color: #0d0d0d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu">
+    <a href="/">Главная</a>
+    <a href="/about/">Обо мне</a>
+    <a href="/skills/">Навыки</a>
+    <a href="/hobbies/">Хобби</a>
+    <a href="/projects/">Проекты</a>
+    <a href="/education/">Образование</a>
+    <a href="/achievements/">Достижения</a>
+</div>
+
+
+<div class="container">
+    <div class="avatar">
+        <img src="/avatar.png" alt="Анастасия Иванова">
+    </div>
+    
+    <h1>Анастасия Иванова</h1>
+    <div class="subtitle">Студентка РУДН | Математика и компьютерные науки (с 2025)</div>
+    
+    
+<div class="card">
+    <h2>📖 Обо мне</h2>
+    <p>Я увлекаюсь программированием, изучаю C++ и Python, работаю в Linux.</p>
+    <p style="margin-top: 10px;"><strong>Мой главный школьный проект</strong> — «Здесь нам жить!»: изучила SketchUp, создала 3D-модель аллеи, провела опрос 72 жителей, рассчитала смету на 18 млн рублей.</p>
+    <p style="margin-top: 10px;"><strong>SAT сдала 15 марта 2026</strong></p>
+</div>
+
+<div class="card">
+    <h2>💻 Навыки</h2>
+    <ul>
+        <li><strong>Linux</strong> — самостоятельная установка и работа</li>
+        <li><strong>C++</strong> — изучаю</li>
+        <li><strong>Python</strong> — основы</li>
+        <li><strong>SketchUp</strong> — 3D-моделирование</li>
+    </ul>
+</div>
+
+<div class="two-cols">
+    <div>
+        <h3>🗣️ Языки</h3>
+        <ul>
+            <li>Русский (родной)</li>
+            <li>Английский (документация)</li>
+            <li>Китайский (начинаю)</li>
+        </ul>
+    </div>
+    <div>
+        <h3>🎨 Хобби</h3>
+        <ul>
+            <li>Бальные танцы (10+ лет)</li>
+            <li>Рисование, сериалы, чай, мода</li>
+        </ul>
+    </div>
+</div>
+
+<div class="card">
+    <h2>📁 Проекты</h2>
+    <h3 style="margin-bottom: 8px;">«Здесь нам жить!» — благоустройство аллеи (2025)</h3>
+    <p>3D-модель в SketchUp, анкетирование 72 человек, смета 18 175 000 руб.</p>
+</div>
+
+<div class="card">
+    <h2>🎓 Образование</h2>
+    <ul>
+        <li><strong>РУДН</strong> — Математика и компьютерные науки (2025-2029)</li>
+        <li><strong>МБОУ СОШ №15</strong> — 11 классов</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>📞 Контакты</h2>
+    <div class="contacts">
+        <a href="https://github.com/asivanova1">🐙 GitHub</a>
+        <a href="https://t.me/huaw_wey">📱 Telegram</a>
+    </div>
+</div>
+
+<h2 style="margin-top: 20px;">📝 Последние посты</h2>
+
+<div class="post">
+    <h3><a href="http://localhost:1313/post/git/">Git: система контроля версий</a></h3>
+    <div class="date">11.04.2026</div>
+</div>
+
+<div class="post">
+    <h3><a href="http://localhost:1313/post/markdown/">Markdown — лёгкий язык разметки</a></h3>
+    <div class="date">11.04.2026</div>
+</div>
+
+
+    
+    <div class="footer">
+        © 2026 Анастасия Иванова | Создано на Hugo
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+baseURL: "http://localhost:1313/"
+title: "Анастасия Иванова"
+languageCode: "ru"
+defaultContentLanguage: "ru"
+theme: "stack"
+
+params:
+  author: "Анастасия Иванова"
+  description: "Студентка РУДН | Математика и компьютерные науки"
+  avatar: "/avatar.png"
+
+  mainSections:
+    - post
+
+  social:
+    github: "asivanova1"
+    telegram: "huaw_wey"
+
+menu:
+  main:
+    - name: "Обо мне"
+      url: "/about"
+      weight: 1
+    - name: "Посты"
+      url: "/post"
+      weight: 2
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

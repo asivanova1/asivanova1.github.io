@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Анастасия Иванова</title>
+        <link>http://localhost:1313/post/</link>
+        <description>Recent content in Posts on Анастасия Иванова</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ru</language>
+        <lastBuildDate>Sat, 11 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>Git: система контроля версий</title>
+            <link>http://localhost:1313/post/git/</link>
+            <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/post/git/</guid>
+            <description>&lt;p&gt;Git — это инструмент, который сохраняет историю изменений в коде.&lt;/p&gt;&#xA;&lt;h3 id=&#34;основные-команды&#34;&gt;Основные команды:&#xA;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;git add&lt;/code&gt; — добавить файлы&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;git commit&lt;/code&gt; — сохранить изменения&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;git push&lt;/code&gt; — отправить на GitHub&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;git pull&lt;/code&gt; — скачать изменения&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Git незаменим при работе в команде и для сохранения истории проекта.&lt;/p&gt;&#xA;</description>
+        </item><item>
+            <title>Markdown — лёгкий язык разметки</title>
+            <link>http://localhost:1313/post/markdown/</link>
+            <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/post/markdown/</guid>
+            <description>&lt;p&gt;Markdown используется для написания постов на этом сайте.&lt;/p&gt;&#xA;&lt;h3 id=&#34;синтаксис&#34;&gt;Синтаксис:&#xA;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;# Заголовок 1&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;## Заголовок 2&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;**жирный текст**&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;*курсив*&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;- пункт списка&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;[ссылка](url)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Очень удобно для блогов и документации.&lt;/p&gt;&#xA;</description>
+        </item></channel>
+</rss>
