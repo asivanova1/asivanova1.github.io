@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Моя неделя: bash и emacs | Анастасия Иванова</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/icon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0d0d0d; font-family: 'Segoe UI', Arial, sans-serif; color: #e0e0e0; }
+        .menu { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 20px; background: #1a1a1a; border-bottom: 1px solid #333; }
+        .menu a { color: #ff69b4; text-decoration: none; font-weight: 500; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .avatar { text-align: center; margin-bottom: 25px; }
+        .avatar img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #ff69b4; }
+        h1 { text-align: center; color: #ffffff; }
+        .subtitle { text-align: center; color: #ff69b4; margin-top: 5px; margin-bottom: 30px; }
+        .card { background: #1a1a1a; border-radius: 16px; padding: 30px; margin-bottom: 24px; border: 1px solid #333; }
+        .card h1 { text-align: left; border-left: 4px solid #ff69b4; padding-left: 20px; }
+        .date { color: #ff69b4; margin-bottom: 20px; }
+        h2 { color: #ffffff; border-left: 4px solid #ff69b4; padding-left: 15px; margin: 20px 0; }
+        p, li { color: #c0c0c0; }
+        ul { padding-left: 28px; }
+        li { margin: 8px 0; }
+        a { color: #ff69b4; text-decoration: none; }
+        .post { background: #1a1a1a; border-radius: 12px; padding: 16px; margin-bottom: 12px; border: 1px solid #333; }
+        .post h3 a { color: #ffffff; }
+        .footer { text-align: center; padding: 30px 0 20px; color: #666; border-top: 1px solid #333; margin-top: 40px; }
+        .two-cols { display: flex; gap: 20px; flex-wrap: wrap; }
+        .two-cols > div { flex: 1; background: #1a1a1a; border-radius: 16px; padding: 20px; border: 1px solid #333; }
+        .contacts { display: flex; gap: 20px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+<div class="menu">
+    <a href="/">Главная</a>
+    <a href="/about/">Обо мне</a>
+    <a href="/skills/">Навыки</a>
+    <a href="/hobbies/">Хобби</a>
+    <a href="/projects/">Проекты</a>
+    <a href="/education/">Образование</a>
+    <a href="/achievements/">Достижения</a>
+    <a href="/post/">Посты</a>
+</div>
+<div class="container">
+    <div class="avatar">
+        <img src="/avatar.png" alt="Анастасия Иванова">
+    </div>
+    <h1>Анастасия Иванова</h1>
+    <div class="subtitle">Студентка РУДН | Математика и компьютерные науки (с 2025)</div>
+    
+<div class="card">
+    <h1>Моя неделя: bash и emacs</h1>
+    <div class="date">26.04.2026</div>
+    <p>На этой неделе я выполняла лабораторные работы по курсу «Архитектура компьютера и операционные системы».</p>
+<h2 id="что-было-сделано">Что было сделано
+</h2><h3 id="лабораторная-работа-11--редактор-emacs">Лабораторная работа №11 — редактор emacs
+</h3><p>Познакомилась с мощным текстовым редактором emacs. Научилась:</p>
+<ul>
+<li>Создавать, редактировать и сохранять файлы</li>
+<li>Использовать комбинации клавиш для навигации и редактирования</li>
+<li>Работать с буферами и окнами</li>
+<li>Выполнять поиск и замену текста</li>
+</ul>
+<p>emacs — сложный, но очень гибкий инструмент. Клавиатурные комбинации поначалу пугают, но привыкаешь.</p>
+<h3 id="лабораторная-работа-12--программирование-в-bash">Лабораторная работа №12 — программирование в bash
+</h3><p>Изучила основы написания скриптов в оболочке bash. Разработала 4 скрипта:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Скрипт</th>
+          <th>Назначение</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>backup_self.sh</code></td>
+          <td>Создаёт резервную копию самого себя</td>
+      </tr>
+      <tr>
+          <td><code>print_args.sh</code></td>
+          <td>Выводит все переданные аргументы</td>
+      </tr>
+      <tr>
+          <td><code>myls.sh</code></td>
+          <td>Аналог команды <code>ls</code> (без использования самой <code>ls</code>)</td>
+      </tr>
+      <tr>
+          <td><code>count_files.sh</code></td>
+          <td>Подсчитывает файлы с заданным расширением</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="что-узнала-нового">Что узнала нового
+</h3><ul>
+<li>Переменные и массивы в bash</li>
+<li>Условные операторы (<code>if</code>, <code>[ -f ]</code>, <code>[ -d ]</code>)</li>
+<li>Циклы (<code>for arg in &quot;$@&quot;</code>)</li>
+<li>Позиционные параметры (<code>$1</code>, <code>$2</code>, <code>$#</code>, <code>$@</code>)</li>
+<li>Специальные переменные оболочки</li>
+</ul>
+<h2 id="итог">Итог
+</h2><p>Обе лабораторные работы защищены, отчёты оформлены. Навыки работы с командной строкой и текстовыми редакторами стали заметно лучше. Теперь даже emacs не пугает 😎</p>
+
+</div>
+
+    <div class="footer">© 2026 Анастасия Иванова | Создано на Hugo</div>
+</div>
+</body>
+</html>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
