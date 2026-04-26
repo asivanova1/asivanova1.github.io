@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="card">
+    <h1>Все посты</h1>
+    {{ range .Pages }}
+    <div class="post">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <div class="date">{{ .Date.Format "02.01.2006" }}</div>
+    </div>
+    {{ end }}
+</div>
+{{ end }}
