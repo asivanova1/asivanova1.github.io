@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Anastasia Ivanova</title>
+    <link rel="icon" type="image/png" href="/icon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0d0d0d; font-family: 'Segoe UI', Arial, sans-serif; color: #e0e0e0; }
+        .menu { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 20px; background: #1a1a1a; border-bottom: 1px solid #333; align-items: center; }
+        .menu a { color: #ff69b4; text-decoration: none; font-weight: 500; }
+        .btn-lang { background: #ff69b4; color: #0d0d0d; padding: 5px 15px; border-radius: 25px; text-decoration: none; font-weight: bold; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .avatar { text-align: center; margin-bottom: 25px; }
+        .avatar img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #ff69b4; }
+        h1 { text-align: center; color: #ffffff; }
+        .subtitle { text-align: center; color: #ff69b4; margin-top: 5px; margin-bottom: 30px; }
+        .card { background: #1a1a1a; border-radius: 16px; padding: 30px; margin-bottom: 24px; border: 1px solid #333; }
+        .card h2 { border-left: 4px solid #ff69b4; padding-left: 15px; margin-bottom: 15px; }
+        .footer { text-align: center; padding: 30px 0 20px; color: #666; border-top: 1px solid #333; margin-top: 40px; }
+        .post { background: #1a1a1a; border-radius: 12px; padding: 16px; margin-bottom: 12px; border: 1px solid #333; }
+        .post a { color: #ff69b4; text-decoration: none; font-size: 1.1em; }
+        .post-date { color: #888; font-size: 0.85em; margin-top: 5px; }
+        .resource-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 15px; }
+        .resource { background: #2a2a2a; padding: 10px; border-radius: 12px; text-align: center; transition: 0.2s; border: 1px solid #444; }
+        .resource:hover { background: #ff69b4; transform: translateY(-2px); }
+        .resource a { color: white; text-decoration: none; display: block; }
+        .resource:hover a { color: black; }
+        .two-cols { display: flex; gap: 20px; margin-bottom: 24px; flex-wrap: wrap; }
+        .two-cols > div { flex: 1; background: #1a1a1a; border-radius: 16px; padding: 20px; border: 1px solid #333; }
+        .contacts { display: flex; gap: 24px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+<div class="menu">
+    
+    <a href="/en/">Home</a>
+    <a href="/en/about/">About</a>
+    <a href="/en/skills/">Skills</a>
+    <a href="/en/hobbies/">Hobbies</a>
+    <a href="/en/projects/">Projects</a>
+    <a href="/en/education/">Education</a>
+    <a href="/en/achievements/">Achievements</a>
+    <a href="/en/post/">Posts</a>
+    <a href="/" class="btn-lang" style="">🇷🇺</a>
+</div>
+<div class="container">
+    <div class="avatar"><img src="/avatar.png" alt="Anastasia Ivanova"></div>
+    <h1>Anastasia Ivanova</h1>
+    <div class="subtitle">RUDN student | Mathematics and Computer Science (since 2025)</div>
+
+    <div class="card"><h2>📖 About me</h2><p>I am passionate about mathematics and programming. I study modern IT technologies, web development, and algorithms.</p><p><strong>My main school project</strong> — "Let's live here!": I learned SketchUp, created a 3D model of an alley, surveyed 72 residents, calculated a budget of 18 million rubles.</p><p><strong>SAT taken on March 15, 2026</strong></p></div>
+
+    <div class="card"><h2>💻 Skills</h2><ul><li>Linux — independent installation and work</li><li>C++ — learning</li><li>Python — basics</li><li>SketchUp — 3D modeling</li></ul></div>
+
+    <div class="two-cols"><div><h3>🗣️ Languages</h3><ul><li>Russian (native)</li><li>English (reading documentation)</li><li>Chinese (beginner)</li></ul></div><div><h3>🎨 Hobbies</h3><ul><li>Ballroom dancing (10+ years)</li><li>Drawing</li><li>TV series</li><li>Different varieties of tea</li><li>Fashion and makeup</li><li>Music</li></ul></div></div>
+
+    <div class="card"><h2>📁 Projects</h2><h3>"Let's live here!" — alley improvement (2025)</h3><p>3D model in SketchUp, survey of 72 residents, budget of 18,175,000 rubles.</p></div>
+
+    <div class="card"><h2>🎓 Education</h2><ul><li>RUDN — Mathematics and Computer Science (2025-2029)</li><li>Secondary School No. 15 — 11 grades</li></ul></div>
+
+    <div class="card"><h2>📚 Scientific and bibliometric resources</h2><div class="resource-grid"><div class="resource"><a href="https://elibrary.ru/">eLibrary</a></div><div class="resource"><a href="https://scholar.google.com/">Google Scholar</a></div><div class="resource"><a href="https://orcid.org/">ORCID</a></div><div class="resource"><a href="https://www.mendeley.com/">Mendeley</a></div><div class="resource"><a href="https://www.researchgate.net/">ResearchGate</a></div><div class="resource"><a href="https://www.academia.edu/">Academia.edu</a></div><div class="resource"><a href="https://arxiv.org/">arXiv</a></div><div class="resource"><a href="https://github.com/asivanova1">GitHub</a></div></div></div>
+
+    <div class="card"><h2>📞 Contacts</h2><div class="contacts"><a href="https://github.com/asivanova1">GitHub</a><a href="https://t.me/huaw_wey">Telegram</a></div></div>
+
+    <h2>📝 Recent posts</h2>
+<div class="post"><a href="/en/post/linux-course-summary/">🐧 Results of the Linux Introduction course on Stepik</a><div class="post-date">17.05.2026</div></div>
+
+<div class="post"><a href="/en/post/bibliography/">📚 Managing references</a><div class="post-date">17.05.2026</div></div>
+    <div class="post"><a href="/post/git/">Git: version control system</a><div class="post-date">11.04.2026</div></div>
+    <div class="post"><a href="/post/markdown/">Markdown — lightweight markup language</a><div class="post-date">11.04.2026</div></div>
+    <div class="post"><a href="/post/week-april-19-26/">My week: bash and emacs</a><div class="post-date">26.04.2026</div></div>
+    <div class="post"><a href="/post/report-design/">Report design: best practices</a><div class="post-date">26.04.2026</div></div>
+    <div class="post"><a href="/post/week-may-13/">My week: returning to the site</a><div class="post-date">13.05.2026</div></div>
+    <div class="post"><a href="/post/scientific-programming-langs/">Scientific programming languages</a><div class="post-date">13.05.2026</div></div>
+
+    <div class="footer">© 2026 Anastasia Ivanova</div>
+</div>
+</body>
+</html>
